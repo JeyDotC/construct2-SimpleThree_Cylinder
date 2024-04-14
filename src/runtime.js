@@ -491,6 +491,22 @@ cr.behaviors.SimpleThree_Cylinder = function (runtime) {
     function Exps() {
     }
 
+    Exps.prototype.Mode = function (ret) {
+        ret.set_float(this.mode);
+    };
+    Exps.prototype.SecondaryRadius = function (ret) {
+        ret.set_float(this.secondaryRadius);
+    };
+    Exps.prototype.RadialSegments = function (ret) {
+        ret.set_float(this.radialSegments);
+    };
+    Exps.prototype.OpenEnded = function (ret) {
+        ret.set_float(this.openEnded);
+    };
+    Exps.prototype.ThetaLength = function (ret) {
+        ret.set_float(this.thetaLength);
+    };
+
     Exps.prototype.VerticalHeight = function (ret) {
         ret.set_float(this.verticalHeight);
     };
